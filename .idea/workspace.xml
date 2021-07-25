@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9191ea0b-71b1-4181-98a1-b54ba39e702c" name="Default Changelist" comment="Урок 1. Современный JavaScript&#10;&#10;Выполнено задание 1:&#10;1. Добавьте стили для верхнего меню, товара, списка товаров и кнопки вызова корзины.&#10;2. Добавьте значения по умолчанию для аргументов функции. Как можно упростить или сократить запись функций?&#10;3. *Сейчас после каждого товара на странице выводится запятая. Из-за чего это происходит? Как это исправить?">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/gamepad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/keyboard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/mouse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/not-product.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/notebook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/app.js" afterDir="false" />
+    <list default="true" id="91198332-2b5d-4b38-856f-31c83dd01fbe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/HomeLesson.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hamburger.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/hamburger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,51 +26,39 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1vaX8dAbxsqrb5FSvN863kbKVAP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1vgY5BQeKlRaJt91XHi6kLeji4K" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/css" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9191ea0b-71b1-4181-98a1-b54ba39e702c" name="Default Changelist" comment="" />
-      <created>1626801017239</created>
+      <changelist id="91198332-2b5d-4b38-856f-31c83dd01fbe" name="Default Changelist" comment="" />
+      <created>1626985015462</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1626801017239</updated>
-      <workItem from="1626801019857" duration="486000" />
-      <workItem from="1626867897170" duration="2027000" />
-      <workItem from="1626883115385" duration="907000" />
+      <updated>1626985015462</updated>
+      <workItem from="1626985018845" duration="4077000" />
+      <workItem from="1627122192605" duration="2345000" />
+      <workItem from="1627218873859" duration="321000" />
     </task>
-    <task id="LOCAL-00001" summary="Урок 1. Современный JavaScript">
-      <created>1626801127348</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1626801127348</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Урок 1. Современный JavaScript&#10;&#10;Выполнено задание 1:&#10;1. Добавьте стили для верхнего меню, товара, списка товаров и кнопки вызова корзины.&#10;2. Добавьте значения по умолчанию для аргументов функции. Как можно упростить или сократить запись функций?&#10;3. *Сейчас после каждого товара на странице выводится запятая. Из-за чего это происходит? Как это исправить?">
-      <created>1626882602621</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1626882602621</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,8 +77,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Урок 1. Современный JavaScript" />
-    <MESSAGE value="Урок 1. Современный JavaScript&#10;&#10;Выполнено задание 1:&#10;1. Добавьте стили для верхнего меню, товара, списка товаров и кнопки вызова корзины.&#10;2. Добавьте значения по умолчанию для аргументов функции. Как можно упростить или сократить запись функций?&#10;3. *Сейчас после каждого товара на странице выводится запятая. Из-за чего это происходит? Как это исправить?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Урок 1. Современный JavaScript&#10;&#10;Выполнено задание 1:&#10;1. Добавьте стили для верхнего меню, товара, списка товаров и кнопки вызова корзины.&#10;2. Добавьте значения по умолчанию для аргументов функции. Как можно упростить или сократить запись функций?&#10;3. *Сейчас после каждого товара на странице выводится запятая. Из-за чего это происходит? Как это исправить?" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

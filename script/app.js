@@ -1,30 +1,80 @@
 'use strict';
 
-const products = [
-	{id: 1, title: 'Notebook', price: 1000, image: 'notebook.png'},
-	{id: 2, title: 'Mouse', price: 100, image: 'mouse.png'},
-	{id: 3, title: 'Keyboard', price: 250, image: 'keyboard.png'},
-	{id: 4, title: 'Gamepad', price: 150, image: 'gamepad.png'},
-	{id: 5, title: 'Pc monitor', price: 450},
-	{id: 6, title: 'Webcam', price: 50},
-];
+// ЗАДАНИЕ 1
+// 1. Добавьте пустые классы для корзины товаров и элемента корзины товаров. Продумайте,
+// какие методы понадобятся для работы с этими сущностями.
+/*
+ * Для корзины товаров предполагаю необходимы методы:
+ * 1) добавления товара.
+ * 2) удаления товара из корзины.
+ * 3) подсчет общего количества и стоимости позиции товара.
+ * 4) подсчета общей стоимости всех товаров в корзине.
+ * */
 
-const pathImg = 'images/'
 
-const renderProduct = (title, price, image = 'not-product.png') =>
-	`<div class='product-item'>
-		<img class='product-img' src='${pathImg}${image}' alt='${title}'>
-		<div class='product-bottom'>
-			<h3>${title}</h3>
-			<p>${price}</p>
-			<div class='product-btn'>
-				<button class='btn btn-product'>Добавит</button>
-			</div>			
-		</div>
-	</div>`;
+// ЗАДАНИЕ 3 выполнено отдельными файлами
 
-const renderProducts = list => list.forEach(el => document.querySelector('.products')
-				.insertAdjacentHTML('beforeend', renderProduct(el.title, el.price, el.image))
-);
+class ProductItem {
+		constructor(product) {
+		this.title = product.title;
+		this.price = product.price;
+		this.id = product.id;
+		this.image = product.image;
+	}
 
-renderProducts(products);
+	getHTMLString() {
+		return `<div class='product-item' data-id="${this.id}">
+			<img class='product-img' src='${this.image}' alt='${this.title}'>
+			<div class='product-bottom'>
+				<h3>${this.title}</h3>
+				<p>${this.price}</p>
+				<div class='product-btn'>
+					<button class='btn btn-product'>Добавить</button>
+				</div>
+			</div>
+		</div>`;
+	}
+}
+
+class ProductList {
+	constructor(container = '.products') {
+		this.container = document.querySelector(container);
+		this.goods = [];
+		this.allProducts = [];
+
+		this.fetchGoods();
+		this.render();
+	}
+
+	fetchGoods() {
+		this.goods = [
+			{id: 1, title: 'Notebook', price: 1000, image: 'images/notebook.png'},
+			{id: 2, title: 'Mouse', price: 100, image: 'images/mouse.png'},
+			{id: 3, title: 'Keyboard', price: 250, image: 'images/keyboard.png'},
+			{id: 4, title: 'Gamepad', price: 150, image: 'images/gamepad.png'},
+			{id: 5, title: 'Pc monitor', price: 450, image: 'images/not-product.png'},
+			{id: 6, title: 'Webcam', price: 50, image: 'images/not-product.png'},
+		];
+	}
+
+	// Суммарная стоимость всех товаров в списке
+	sumAllProducts() {
+		let sum = 0;
+		this.goods.forEach(good => sum += good.price);
+		return sum;
+	}
+
+	render() {
+		for (const product of this.goods) {
+			const productObject = new ProductItem(product);
+			this.allProducts.push(productObject);
+			this.container.insertAdjacentHTML('beforeend', productObject.getHTMLString());
+		}
+		//this.allProducts.forEach(el => this.container.insertAdjacentHTML('beforeend', el.getHTMLString()));
+	}
+
+
+}
+
+let product1 = new ProductList();
+console.log('Сумма всех товаров в корзине = ' + product1.sumAllProducts());

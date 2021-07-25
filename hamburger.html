@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Hamburger</title>
+	<script src='script/hamburger.js' defer></script>
+</head>
+<body>
+<form action='#'>
+	<h1>Бургер</h1>
+
+	<h2>Размер гамбургера</h2>
+	<p>
+		<label><input name='size' type='radio' data-cost='50' data-kkal='20' data-name='маленький' class='burger burger_size' checked>
+			Маленький (цена: 50 рублей, калорийность: 20 калорий)
+		</label>
+	</p>
+	<p>
+		<label><input name='size' type='radio' data-cost='100' data-kkal='40' data-name='большой' class='burger burger_size'>
+			Большой (цена: 100 рублей, калорийность: 40 калорий)
+		</label>
+	</p>
+
+	<h2>Наполнение - одна из нескольких видов начинок (обязательно)</h2>
+	<p>
+		<label><input name='filler' type='radio' data-cost='10' data-kkal='20' data-name='сыр' class='burger burger_filler' checked>
+			Сыр (цена: 10 рублей, калорийность: 20 калорий)
+		</label>
+	</p>
+	<p>
+		<label><input name='filler' type='radio' data-cost='20' data-kkal='5' data-name='салат' class='burger burger_filler'>
+			Салат (цена: 20 рублей, калорийность: 5 калорий)
+		</label>
+	</p>
+	<p>
+		<label><input name='filler' type='radio' data-cost='15' data-kkal='10' data-name='картофель' class='burger burger_filler'>
+			Картофель (цена: 15 рублей, калорийность: 10 калорий)
+		</label>
+	</p>
+
+	<h2>Дополнительно</h2>
+	<p>
+		<label><input type='checkbox' data-cost='15' data-kkal='0' data-name='приправы' class='burger burger_optional'>
+			Приправа (цена: 15 рублей, калорийность: 0 калорий)
+		</label>
+
+	</p>
+	</p>
+	<p>
+		<label><input type='checkbox' data-cost='20' data-kkal='5' data-name='майонез' class='burger burger_optional'>
+			Майонез (цена: 20 рублей, калорийность: 5 калорий)
+		</label>
+
+	</p>
+
+	<h3>Итоги:</h3>
+	<p>Калорийность: <span class='burger_kkal'></span></p>
+	<p>Цена: <span class='burger_price'></span></p>
+	<button class='result'>Посчитать</button>
+</form>
+
+</body>
+</html>
