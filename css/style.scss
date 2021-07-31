@@ -1,3 +1,7 @@
+$main-color: #310e92;
+$cart-btn-color: green;
+$header-background-color: blanchedalmond;
+
 .content {
   max-width: 1000px;
   margin: 0 auto;
@@ -8,8 +12,15 @@
 }
 
 .header {
-  background-color: blanchedalmond;
-  border-bottom: 2px solid blueviolet;
+  background-color: $header-background-color;
+  border-bottom: 2px solid $main-color;
+
+  &-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+  }
 }
 
 .logo {
@@ -85,27 +96,56 @@
   width: 100px;
 
   &-cart {
-    border-color: blueviolet;
-    color: blueviolet;
+    border-color: $main-color;
+    color: $main-color;
 
     &:hover {
-      background-color: blueviolet;
+      background-color: $main-color;
       color: white;
     }
   }
 
   &-product {
-    border-color: green;
-    color: green;
+    border-color: $cart-btn-color;
+    color: $cart-btn-color;
 
     &:hover {
-      background-color: green;
+      background-color: $cart-btn-color;
       color: white;
     }
   }
 
   &-right {
     justify-self: right;
+  }
+}
+
+.search {
+  &-form {
+    position: relative;
+    width: 200px;
+    margin-right: 25px;
+  }
+
+  &-field {
+    box-sizing: border-box;
+    width: 200px;
+    color: $main-color;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    outline:none;
+    border-bottom: 2px solid $main-color;
+  }
+
+  &-btn {
+    background-color: transparent;
+    border: none;
+    color: $main-color;
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
   }
 }
 

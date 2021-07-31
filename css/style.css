@@ -9,7 +9,12 @@
 
 .header {
   background-color: blanchedalmond;
-  border-bottom: 2px solid blueviolet;
+  border-bottom: 2px solid #310e92;
+}
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .logo {
@@ -74,11 +79,11 @@
   width: 100px;
 }
 .btn-cart {
-  border-color: blueviolet;
-  color: blueviolet;
+  border-color: #310e92;
+  color: #310e92;
 }
 .btn-cart:hover {
-  background-color: blueviolet;
+  background-color: #310e92;
   color: white;
 }
 .btn-product {
@@ -91,6 +96,31 @@
 }
 .btn-right {
   justify-self: right;
+}
+
+.search-form {
+  position: relative;
+  width: 200px;
+  margin-right: 25px;
+}
+.search-field {
+  box-sizing: border-box;
+  width: 200px;
+  color: #310e92;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #310e92;
+}
+.search-btn {
+  background-color: transparent;
+  border: none;
+  color: #310e92;
+  font-size: 1.2em;
+  position: absolute;
+  bottom: 5px;
+  right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
