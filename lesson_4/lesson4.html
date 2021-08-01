@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regexp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div>
+    <h2>Предложение</h2>
+    <div class="word">
+	    <p>One: 'Hi Mary.' Two: 'Oh, hi.'</p>
+	    <p>One: 'How are you doing?'</p>
+	    <p>Two: 'I'm doing alright. How about you?'</p>
+	    <p>One: 'Not too bad. The weather is great isn't it?'</p>
+	    <p>Two: 'Yes. It's absolutely beautiful today.'</p>
+	    <p>One: 'I wish it was like this more frequently.'</p>
+	    <p>Two: 'Me too.'</p>
+	    <p>One: 'So where are you going now?'</p>
+	    <p>Two: 'I'm going to meet a friend of mine at the department store'</p>
+	    <p>One: 'Going to do a little shopping?'</p>
+	    <p>Two: 'Yeah, I have to buy some presents for my parents.'</p>
+	    <p>One: 'What's the occasion?'</p>
+	    <p>Two: 'It's their anniversary.'</p>
+	    <p>One: 'That's great. Well, you better get going. You don't want to be late.'</p>
+	    <p>Two: 'I'll see you next time.'</p>
+	    <p>One: 'Sure.' Bye.'</p>
+    </div>
+
+    <button class="btn-regxp">Форматировать текст</button>
+    <h2>Результат</h2>
+    <div class="result"> </div>
+</div>
+<hr>
+<h2>Форма обратной связи</h2>
+<div class="form">
+    <p>
+        <label>
+            <input id="name" class="input-txt" type="text" name="name" placeholder="Your name">
+            <span id="error-name" class="none">Введите имя</span>
+        </label>
+    </p>
+    <p>
+        <label>
+            <input id="phone" class="input-txt" type="tel" name="phone" placeholder="+7(000)000-00-00">
+            <span id="error-phone" class="none">Введите телефон в формате: +7(000)000-00-00</span>
+        </label>
+    </p>
+    <p>
+        <label>
+            <input id="email" class="input-txt" type="email" name="email" placeholder="E-mail">
+            <span id="error-email" class="none">Введите email адрес в формате: example@site.com</span>
+        </label>
+    </p>
+    <p>
+        <label class='last-label'>
+            <textarea id="message" class="input-txt last-input" placeholder="Your message here"
+	            name="message"></textarea>
+	          <span id="error-message" class="none">Введите сообщение</span>
+        </label>
+    </p>
+    <button class="button">Отправить</button>
+</div>
+</body>
+</html>
