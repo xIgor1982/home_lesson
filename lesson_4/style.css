@@ -20,6 +20,12 @@ p {
     padding: 0;
 }
 
+#error-message {
+    position: absolute;
+    left: 254px;
+    bottom: 16px;
+}
+
 .result {
     min-height: 20px;
     padding: 5px 10px;
@@ -52,10 +58,3 @@ p {
 .last-label {
     position: relative;
 }
-
-#error-message {
-    position: absolute;
-    left: 254px;
-    bottom: 16px;
-}
-

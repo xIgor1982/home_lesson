@@ -1,24 +1,9 @@
 'use strict';
 
-// function regxpText() {
-//     let result = document.querySelector('.word').innerText;
-//     const regexp = /^'|(\s)'|'(\s)|'$/g;
-//
-//     result = result.replace(regexp, '"');
-//     document.querySelector('.result').innerHTML = result;
-// }
-
-// document.querySelector('.btn-regxp').addEventListener('click', () => {
-//     regxpText();
-// })
-
-
 function regxpText(text) {
     const regexp = /^'|(\s)'|'(\s)|'$/g;
     return text.replace(regexp, '"');;
 }
-
-
 
 document.querySelector('.btn-regxp').addEventListener('click', () => {
     let arrText = document.querySelectorAll('.word p');
@@ -31,9 +16,6 @@ document.querySelector('.btn-regxp').addEventListener('click', () => {
         document.querySelector('.result').insertAdjacentHTML('beforeend', `<p>${el}</p>`)
     });
 })
-
-
-
 
 
 //Проверка данных формы
