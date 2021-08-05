@@ -8,21 +8,25 @@
 </head>
 <body>
 
-<div class='grid_main'>
-	<header class='header'>
-		<div class='content grid_header'>
-			<div class="logo">Интернет-магазин</div>
-			<button class="btn btn-cart btn-right" type="button">Корзина</button>
-		</div>
-	</header>
+<header>
+	<div class='logo'>Интернет-магазин</div>
+	<div class='cart'>
+		<form action='#' class='search-form'>
+			<input type='text' class='search-field'>
+			<button class='btn-search' type='submit'>
+				<i class='fas fa-search'></i>
+			</button>
+		</form>
+		<button class='btn-cart' type='button'>Корзина</button>
+		<div class='cart-block invisible'></div>
+	</div>
+</header>
 
-	<main class='main'>
-		<div class='content'>
-			<div class="products grid_products"></div>
-		</div>
-	</main>
-</div>
+<main>
+	<div class='products'></div>
+</main>
 
+<script src='script/fontawesome.js'></script>
 <script src='script/app.js'></script>
 </body>
 </html>
