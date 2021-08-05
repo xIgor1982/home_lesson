@@ -1,3 +1,5 @@
+'use strict';
+
 class Hamburger {
 	constructor()  {
 		this.size = '';
