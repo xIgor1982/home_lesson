@@ -1,0 +1,60 @@
+body {
+   padding: 20px 50px;
+}
+
+button {
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #1439dc;
+    outline: none;
+    border: 2px solid #1439dc;
+    color: #fafafa;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#error-message {
+    position: absolute;
+    left: 254px;
+    bottom: 16px;
+}
+
+.result {
+    min-height: 20px;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+.done_val {
+    border-color: green;
+}
+
+.error_val {
+    border-color: red;
+}
+
+.none {
+    display: none;
+}
+
+.form .input-txt {
+    min-width: 250px;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.last-input {
+    margin-bottom: 0;
+}
+
+.last-label {
+    position: relative;
+}
