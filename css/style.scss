@@ -81,6 +81,7 @@ img {
 
 .cart {
   position: relative;
+  display: flex;
 
   &-block {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.62);
@@ -167,6 +168,10 @@ img {
 
   &-bio {
     display: flex;
+
+    & img {
+      width: 70px;
+    }
   }
 
   &-single-price {
