@@ -72,6 +72,7 @@ img {
 
 .cart {
   position: relative;
+  display: flex;
 }
 .cart-block {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.62);
@@ -149,6 +150,9 @@ img {
 }
 .product-bio {
   display: flex;
+}
+.product-bio img {
+  width: 70px;
 }
 .product-single-price {
   color: #474747;
