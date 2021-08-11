@@ -218,7 +218,7 @@ class ProductItem extends Item{
 		return `<div class="product-item" data-id="${this.id}">
                 <div class='product-img'>
                   <img src="${this.image}" alt="Some image">
-                </div>  
+                </div>
                 <div class="desc">
                     <h3>${this.title}</h3>
                     <p>${this.price} ₽</p>
@@ -241,7 +241,7 @@ class CartItem extends Item{
                 <div class="product-bio">
                 <div class='product-img'>
                   <img src="${this.image}" alt="Some image">
-                </div>                
+                </div>
                 <div class="product-desc">
                 <p class="product-title">${this.title}</p>
                 <p class="product-quantity">Количество: ${this.quantity}</p>

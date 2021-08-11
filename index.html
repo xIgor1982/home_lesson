@@ -8,25 +8,27 @@
 </head>
 <body>
 
-<header>
-	<div class='logo'>Интернет-магазин</div>
-	<div class='cart'>
-		<form action='#' class='search-form'>
-			<input type='text' class='search-field'>
-			<button class='btn-search' type='submit'>
-				<i class='fas fa-search'></i>
-			</button>
-		</form>
-		<button class='btn-cart' type='button'>Корзина</button>
-		<div class='cart-block invisible'></div>
-	</div>
-</header>
+<div id='app'>
+	<header>
+		<div class='logo'>Интернет-магазин</div>
+		<div class='cart'>
+			<filter-el></filter-el>
+<!--			<button class='btn-cart' type='button'>Корзина</button>-->
+			<cart ref='cart'></cart>
+		</div>
+	</header>
+	<main>
+		<products ref='products'></products>
+	</main>
+</div>
 
-<main>
-	<div class='products'></div>
-</main>
-
-<script src='script/fontawesome.js'></script>
-<script src='script/app.js'></script>
+<script defer src='script/fontawesome.js'></script>
+<script src='script/vue.js'></script>
+<script src='script/CartComp.js'></script>
+<script src='script/ProductComp.js'></script>
+<script src='script/FilterComp.js'></script>
+<script src='script/ErrorComp.js'></script>
+<script src='script/main.js'></script>
+<!--<script src='script/app.js'></script>-->
 </body>
 </html>
