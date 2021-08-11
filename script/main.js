@@ -3,20 +3,14 @@ const pathImg = 'images/';
 
 const app =new Vue({
 	el: '#app',
-	data: {
-		searchLine : '',
-	},
 	methods: {
 		getJson(url){
 			return fetch(url)
 			.then(result => result.json())
-			.catch(error => console.log(error));
-		},
-		filterGoods() {
-			alert(this.searchLine);
+			.catch(error => this.$refs.error.setError(error));
 		}
 	},
 	mounted() {
-		// console.log(this);
+		console.log(this);
 	}
 });

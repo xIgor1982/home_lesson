@@ -12,12 +12,8 @@
 	<header>
 		<div class='logo'>Интернет-магазин</div>
 		<div class='cart'>
-			<form action='#' class='search-form' @submit.prevent='filter'>
-				<input type='text' class='search-field' v-model='searchLine'>
-				<button class='btn-search' type='submit' @click.prevent='filterGoods'>
-					<i class='fas fa-search'></i>
-				</button>
-			</form>
+			<filter-el></filter-el>
+<!--			<button class='btn-cart' type='button'>Корзина</button>-->
 			<cart ref='cart'></cart>
 		</div>
 	</header>
@@ -30,6 +26,8 @@
 <script src='script/vue.js'></script>
 <script src='script/CartComp.js'></script>
 <script src='script/ProductComp.js'></script>
+<script src='script/FilterComp.js'></script>
+<script src='script/ErrorComp.js'></script>
 <script src='script/main.js'></script>
 <!--<script src='script/app.js'></script>-->
 </body>
